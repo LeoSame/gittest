@@ -1,6 +1,76 @@
-body {
-  background-color: blanchedalmond;
+:root {
+  --white-color: #ffffff;
+  --black-color: #212121;
+  --accent-color: #18a0fb;
+  --primary-font-stack: 'Montserrat', Helvetica, sans-serif;
+  --title-font-stack: 'Amagro', Arial, serif;
 }
-h2 {
-  font-size: 50px;
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: var(--title-font-stack); */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: var(--primary-font-stack);
+}
+
+.page-header {
+  background-color: var(--white-color);
+}
+
+/* SITE NAV */
+.site-nav .link {
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--black-color);
+}
+
+.button {
+  font-size: 15px;
+  line-height: 1.2;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero .title {
+  font-size: 56px;
+  line-height: 80px;
+  font-weight: 400;
+}
+
+.hero .button {
+  font-size: 17px;
+}
+
+/* FEATURES */
+
+.features-title {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.feature-list .title {
+  font-size: 24px;
+  line-height: 36px;
 }
